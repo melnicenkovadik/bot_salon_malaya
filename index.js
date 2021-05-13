@@ -5,7 +5,7 @@ const {
     hairOptions,
     menu
 } = require('./options.js')
-const token = '1743094486:AAHoBydLtywcbWyAUz2IPXvNboWT930OOnc'
+const token = '1743094486:AAE0gsoBoya_K_U17Atr7Mo8qAwtalXNwgw'
 const bot = new TelegramApi(token, {polling: true})
 var spawn = require('child_process').spawn;
 spawn('node', ['./index.js'], {
