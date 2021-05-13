@@ -1,5 +1,8 @@
 require('dotenv').config();
 process.env.NTBA_FIX_319 = 1;
+const path = require('path')
+const express = require('express')
+const app = express()
 const TelegramBot = require('node-telegram-bot-api');
 const bot = new TelegramBot(process.env.TOKEN_TELEGRAM, {polling: true});
 const {
@@ -32,7 +35,7 @@ const start = async () => {
         }
         return bot.sendMessage(chatId, `${msg.from.first_name} ,я тебя не понимаю, попробуй ещё раз!`)
     })
-    bot.on('callback_query', async (msg)=> {
+    bot.on('callback_query', async (msg) => {
         const data = msg.data;
         const chatId = msg.message.chat.id;
         if (data === 'alinkaslz') {
@@ -64,3 +67,4 @@ const start = async () => {
 }
 
 start()
+app.listen(process.env.PORT || 3000)
