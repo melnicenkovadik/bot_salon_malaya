@@ -7,6 +7,7 @@ const {
 } = require('./options.js')
 const token = '1743094486:AAHoBydLtywcbWyAUz2IPXvNboWT930OOnc'
 const bot = new TelegramApi(token, {polling: true})
+
 const start = () => {
     bot.setMyCommands([
         {command: '/start', description: 'Начальное приветствие'},
