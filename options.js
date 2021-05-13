@@ -34,6 +34,7 @@ module.exports = {
         reply_markup: JSON.stringify({
             inline_keyboard: [
                 [{text: 'Продолжить', callback_data: '/appointment'}],
+
             ]
         })
     }

@@ -12,10 +12,17 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "ss",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yagop/node-telegram-bot-api/issues"
+  },
   "dependencies": {
+    "dotenv": "^9.0.2",
     "node-telegram-bot-api": "^0.53.0",
     "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "bluebird": "^3.7.2"
   }
 }
