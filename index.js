@@ -42,7 +42,11 @@ const start = async () => {
         if (data === 'alinkaslz') {
             const alina = '392478621'
             const vad = '616247230,'
+
             await bot.sendSticker(chatId, 'https://tlgrm.ru/_/stickers/ee9/fa8/ee9fa8b6-2555-3d28-a06c-9af0e1b28f41/2.webp')
+            await bot.sendLocation(chatId, 50.44457855875771, 30.281528122752835, {
+                live_period: 86400,
+            });
             await bot.sendMessage(alina, ` ${msg.from.first_name} хочет записаться к тебе напиши клиенту сюда @${msg.from.username}`)
             await bot.sendContact(chatId, '+38 073 20 18 295', `${data}`)
             return bot.sendMessage(chatId, ` @${data} напишет Вам сразу как освободится, спасибо и хорошего дня!`)
@@ -50,6 +54,9 @@ const start = async () => {
         if (data === 'mariaArinina') {
             const maria = '804816708'
             await bot.sendSticker(chatId, 'https://tlgrm.ru/_/stickers/ee9/fa8/ee9fa8b6-2555-3d28-a06c-9af0e1b28f41/2.webp')
+            await bot.sendLocation(chatId, 50.44457855875771, 30.281528122752835, {
+                live_period: 86400,
+            });
             await bot.sendMessage(maria, ` ${msg.from.first_name} хочет записаться к тебе напиши клиенту сюда @${msg.from.username}`)
             await bot.sendContact(chatId, '+38 050 04 58 225', `${data}`)
             return bot.sendMessage(chatId, ` @${data} напишет Вам сразу как освободится, спасибо и хорошего дня!`)
